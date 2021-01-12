@@ -1,0 +1,34 @@
+textarea, input {
+    font-size: 75%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #42474b;
+    color:#b8b8b8;
+    box-shadow: 2px 2px black;
+    transition: box-shadow 250ms;
+}
+.infant {
+    width: 700px
+}
+textarea {
+    resize:none;
+    overflow: hidden;
+    border: 13px solid green;
+    border-radius: 13px;
+    border-width: 4px;
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+h1 {
+    cursor:context-menu;
+    text-shadow: none;
+}
+input {
+    border: 4px solid green;
+    border-radius: 9px;
+    cursor: pointer;
+}
+textarea:hover, input:hover {
+    box-shadow: 5px 5px black;
+    transition: box-shadow 250ms;
+}

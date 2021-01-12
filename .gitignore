@@ -1,0 +1,8 @@
+/app/config/auth.json
+/app/public/img/
+/node_modules/
+/.vscode/
+/.git/
+/git/
+package-lock.json
+/app/.build/

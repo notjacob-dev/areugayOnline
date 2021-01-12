@@ -1,0 +1,55 @@
+:root {
+    background-color: #23272A;
+}
+.container {
+    line-height: 70%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: green;
+    text-shadow: 2px 2px black;
+    font-size: 150%;
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.container3 button {
+    background-color: #228b22;
+    border-radius: 6px;
+    box-shadow: 2px 2px black;
+    border-color: #1d5c1d;
+    font-size: large;
+    color: black;
+    font-family: fantasy;
+    transition: color 500ms;
+    cursor: pointer;
+}
+img {
+    position: absolute;
+    opacity: 0%;
+    position: absolute;
+    transition: opacity 350ms;
+}
+.container3 button:hover {
+    color: rgba(4, 3, 2, 0);
+    transition: color 500ms;
+}
+.container3 button:hover + #gspotify {
+    opacity: 60%;
+    transition: opacity 350ms;
+}
+.container h3 {
+    line-height: 100%;
+}
+.container2 {
+    display: table-cell;
+    vertical-align: middle;
+}
+.container3 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 120%;
+    width: 400px;
+}

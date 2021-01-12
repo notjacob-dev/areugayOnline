@@ -1,0 +1,20 @@
+h1, h2, h3 {
+    text-shadow: 2px 2px black;
+    transition: text-shadow 300ms;
+}
+h1:hover, h2:hover, h3:hover {
+    text-shadow: 4px 4px black;
+    transition: text-shadow 300ms;
+}
+#name {
+    color: orange;
+}
+#gay {
+    color: red;
+}
+#percent {
+    color: blue;
+}
+#timestamp {
+    color: purple;
+}
