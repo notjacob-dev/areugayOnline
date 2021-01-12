@@ -117,7 +117,7 @@ app.get('/authorize-spotify', async (req, res) => {
             + "?response_type=code"
             + "&client_id=" + config.client_id
             + (scopes ? '&scope=' + encodeURIComponent(scopes) : '')
-            + '&redirect_uri=' + encodeURIComponent('http://localhost:3000/gc-spotify-authorized'))
+            + '&redirect_uri=' + encodeURIComponent('https://notjacob-dev.github.io/gc-spotify-authorized'))
     }
 })
 app.get('/gc-spotify-authorized', async (req, res) => {
