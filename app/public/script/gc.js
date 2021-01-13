@@ -53,7 +53,7 @@ const progress = () => {
             acc += num
         })
         const fin = acc / percent.length
-        window.location.href = "https://notjacob-dev.github.io/create-summary?" +
+        window.location.href = base_url + "/create-summary?" +
         "gay=" + (fin > 50 ? "true" : "false") + "&" +
         "percent=" + fin + "&" + 
         "name=" + uname

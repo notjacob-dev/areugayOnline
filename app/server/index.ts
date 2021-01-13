@@ -3,6 +3,7 @@
 //require('../config/routes.js')
 import express from 'express'
 const cookies = require('cookie-parser')
+const favicon = require('serve-favicon')
 import { Ratelimit } from './ratelimit'
 import got from 'got'
 import url from 'url'
@@ -76,6 +77,9 @@ const redirect = (res: any, req: any, uri: string) => {
 
 const app = express()
 
+app.get('/favicon.ico', async (req, res) => {
+    res.sendFile("./public/img/favicon.ico", {root: "./app/"})
+})
 app.use(express.static("./app/public/"))
 app.use((req, res, next) => {
     console.log(`Connecting ${req.connection.remoteAddress} to ${req.url}`)
@@ -117,7 +121,7 @@ app.get('/authorize-spotify', async (req, res) => {
             + "?response_type=code"
             + "&client_id=" + config.client_id
             + (scopes ? '&scope=' + encodeURIComponent(scopes) : '')
-            + '&redirect_uri=' + encodeURIComponent('https://notjacob-dev.github.io/gc-spotify-authorized'))
+            + '&redirect_uri=' + encodeURIComponent(config.base_url + '/gc-spotify-authorized'))
     }
 })
 app.get('/gc-spotify-authorized', async (req, res) => {

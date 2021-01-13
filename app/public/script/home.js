@@ -1,6 +1,6 @@
 const gcRaw = () => {
-    window.location.href = ("https://notjacob-dev.github.io/gc")
+    window.location.href = (base_url + "/gc")
 }
 const gcSpotify = () => {
-    window.location.href = ("https://notjacob-dev.github.io/gc-spotify")
+    window.location.href = (base_url + "/gc-spotify")
 }

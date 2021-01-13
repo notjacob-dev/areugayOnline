@@ -16,6 +16,6 @@ db.collection("summaries").where("uuid", "==", new URLSearchParams(window.locati
         document.getElementById("percent").innerText = "Percent: " + data.get("percent") + "%"
         document.getElementById("timestamp").innerText = "Taken on " + data.get("age").toDate().toDateString()
     } else {
-        window.location.href = "https://notjacob-dev.github.io"
+        window.location.href = base_url + "/404"
     }
 })
